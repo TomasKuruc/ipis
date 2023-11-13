@@ -1,0 +1,6 @@
+FROM node:20.3.1-bullseye
+WORKDIR /app
+COPY ./package.json ./
+RUN npm i
+COPY . .
+CMD ["npm", "run", "start"]
