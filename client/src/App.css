@@ -10,3 +10,104 @@
 /*  padding: 10px;*/
 /*  background: #ccc;*/
 /*}*/
+
+
+#root, body, html, .main, .page {
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(rgba(255, 183, 193, 1) 0.5px, rgba(255, 183, 193, .1) 0.5px);
+    background-size: 10px 10px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+iframe {display: none}
+
+.page {
+    position: relative;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 86px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    color: lightcoral;
+
+}
+
+.values {
+    margin-top: 5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.values h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: blueviolet;
+}
+
+.value {
+    font-size: 30px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-top: 10px;
+}
+
+.value-index {
+    font-weight: bold;
+    font-size: 24px;
+    color: hotpink;
+    margin-right: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-top: 25px;
+}
+
+.input {
+    background: rgba(240, 128, 128, 0.8);
+    border: 3px solid hotpink;
+    padding: 18px 20px;
+    outline: none;
+    border-radius: 15px;
+    width: 400px;
+    color: white !important;
+    font-family: 'Exo 2', sans-serif !important;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.submitbtn {
+    display: inline-block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: none;
+    background: mediumpurple;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border: 3px solid rebeccapurple;
+    cursor: pointer;
+}
+
+.submitbtn:hover {
+   color: yellow;
+}
